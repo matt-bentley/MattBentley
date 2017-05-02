@@ -1,0 +1,26 @@
+﻿@import '../styles/_variables.scss';
+
+:host /deep/ .primary-dark {
+   background-color: $primary-dark !important;
+}
+
+:host /deep/ .mat-card {
+   color: #616161 !important;
+}
+
+:host /deep/ .text-blue {
+   color: $blue-colour !important;
+}
+
+.container {
+   padding: 20px 15px;
+   min-height: calc(100vh - 150px);
+}
+
+@media (min-width: 1200px) {
+   .container {
+      width: 900px;
+   }
+}
+
+

@@ -1,0 +1,31 @@
+<md-card class="example-card">
+   <md-card-header>
+      <md-card-title><span class="title">Change Name</span></md-card-title>
+   </md-card-header>
+   <form>
+      <md-card-content>
+         <table style="width:100%">
+            <tr>
+               <td>
+                  <md-input-container style="width:100%" class="example-full-width">
+                     <input mdInput id="firstName" placeholder="First name" name="firstName" [(ngModel)]="userNameModel.firstName" required>
+                  </md-input-container>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <md-input-container style="width:100%" class="example-full-width">
+                     <input mdInput id="lastName" placeholder="Last name" name="lastName" [(ngModel)]="userNameModel.lastName" required>
+                  </md-input-container>
+               </td>
+            </tr>
+         </table>
+      </md-card-content>
+      <md-card-content *ngIf="errors.length > 0" style="color: red;">
+         <span *ngFor="let error of errors">{{error}}</span>
+      </md-card-content>
+      <md-card-actions style="margin-bottom: 0;padding-bottom: 0;">
+         <button type="submit" md-button class="text-blue" (click)="save()">UPDATE</button>
+      </md-card-actions>
+   </form>
+</md-card>

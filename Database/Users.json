@@ -1,0 +1,19 @@
+[
+  {
+    "Id": "7d0a0c33-c129-41eb-9b6d-014e7754a8d0",
+    "UserName": "MATT@TEST.COM",
+    "FirstName": "Matt",
+    "LastName": "Bentley",
+    "Email": "matt@test.com",
+    "PasswordHash": "AQAAAAEAACcQAAAAELa2VgEiIJMTggdLYUcmYbigQgKjNYb5gx0gVfy6qfBJgPkS8+l5gZxbaImN1Zv5XQ==",
+    "AuthenticationType": null,
+    "IsAuthenticated": false,
+    "Actor": null,
+    "BootstrapContext": null,
+    "Claims": [],
+    "Label": null,
+    "Name": null,
+    "NameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+    "RoleClaimType": "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
+  }
+]
