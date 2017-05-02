@@ -36,7 +36,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
    }
 
    public onLinkClick($event: any): void {
-      let path: string = $event.target.innerText;
+      let path: string = $event.target.innerText.toString().trim();
       this.navigate(path.toLowerCase());
    }
 

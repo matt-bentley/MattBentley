@@ -1,3 +1,3 @@
-<button md-fab class="back-to-top" (click)="smoothScroll('router-outlet')" *ngIf="isScroll" [@addMe]="'in'">
+<button md-fab class="back-to-top" (click)="smoothScroll('router-outlet')" mdTooltip="Back to top" [mdTooltipPosition]="'above'" *ngIf="isScroll" [@pop]="'in'">
    <md-icon>keyboard_arrow_up</md-icon>
 </button>

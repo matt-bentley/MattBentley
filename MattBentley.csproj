@@ -30,11 +30,7 @@
   </Target>
 
   <ItemGroup>
-    <Content Include="wwwroot\dist\deeppurple-amber.css" />
-    <Content Include="wwwroot\dist\favicon.ico" />
-    <Content Include="wwwroot\dist\indigo-pink.css" />
     <Content Include="wwwroot\favicon.ico" />
-    <Content Include="wwwroot\favicon2.ico" />
   </ItemGroup>
   
   <ItemGroup>
@@ -104,6 +100,10 @@
 
   <ItemGroup>
     <None Include="Server\Identity\DemoUserPrincipalFactory.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\dist\" />
   </ItemGroup>
 
 </Project>

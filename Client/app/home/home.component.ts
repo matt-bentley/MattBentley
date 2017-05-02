@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { routerTransition, hostStyle } from '../router.animations';
+import { routerTransition, hostStyle } from '../shared/animations/animations';
 import { MdDialog } from '@angular/material';
 import { DialogElementsExampleDialog } from './home-dialog.component';
 

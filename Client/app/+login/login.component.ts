@@ -1,5 +1,5 @@
 ﻿import { Component, OnInit } from '@angular/core';
-import { routerTransition, hostStyle } from '../router.animations';
+import { routerTransition, hostStyle } from '../shared/animations/animations';
 import { Router } from '@angular/router';
 
 import { LoginModel } from '../core/models/login-model';

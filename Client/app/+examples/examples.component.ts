@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { routerTransition, hostStyle } from '../router.animations';
+import { routerTransition, hostStyle } from '../shared/animations/animations';
 
 @Component({
   selector: 'appc-examples',

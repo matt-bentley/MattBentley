@@ -4,12 +4,44 @@
    background-color: $primary-dark !important;
 }
 
-:host /deep/ .mat-card {
-   color: #616161 !important;
+:host /deep/ .primary {
+   background-color: $primary !important;
+}
+
+:host /deep/ .accent {
+   background-color: $accent !important;
+}
+
+:host /deep/ .light-blue {
+   background-color: $light-blue-colour !important;
+}
+
+:host /deep/ .blue {
+   background-color: $blue-colour !important;
 }
 
 :host /deep/ .text-blue {
    color: $blue-colour !important;
+}
+
+:host /deep/ .circle {
+   width: 50px;
+   height: 50px;
+   border-radius: 25px;
+   margin: 8px 0;
+   display: inline-block;
+}
+
+:host /deep/ .mat-card {
+   color: #616161 !important;
+}
+
+:host /deep/ .mat-card-actions {
+   margin-left: -24px !important;
+   margin-right: -24px !important;
+   padding: 4px 0 4px 10px !important;
+   border-top: 1px rgba(0, 0, 0, 0.12)solid !important;
+   margin-bottom: -24px !important;
 }
 
 .container {

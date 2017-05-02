@@ -1,26 +1,12 @@
-import { Component, HostListener, OnInit, trigger, state, style, transition, animate, keyframes } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { pop } from '../animations/animations';
 
 @Component({
    selector: 'appc-back-to-top',
    styleUrls: ['./back-to-top.component.scss'],
    templateUrl: './back-to-top.component.html',
    animations: [
-      trigger('addMe', [
-         state('in', style({
-            transform: 'scale(1)',
-            opacity: 1
-         })),
-         transition('void => *', animate('300ms ease-out', keyframes([
-            style({ transform: 'scale(0)', offset: 0 }),
-            style({ transform: 'scale(1.15)', offset: 0.8 }),
-            style({ transform: 'scale(1)', offset: 1 })
-         ]))),
-         transition('* => void', animate('300ms ease-in', keyframes([
-            style({ transform: 'scale(1)', offset: 0 }),
-            style({ transform: 'scale(1.15)', offset: 0.2 }),
-            style({ transform: 'scale(0)', offset: 1 })
-         ])))
-      ])
+      pop
    ]
 })
 export class BackToTopComponent implements OnInit {

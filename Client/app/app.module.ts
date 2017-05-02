@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { HomeModule } from './home/home.module';
 import 'hammerjs';
+import 'mdn-polyfills/Object.assign';
 
 import { routing } from './app.routes';
 import { AppService } from './app.service';

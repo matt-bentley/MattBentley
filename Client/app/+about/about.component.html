@@ -1,0 +1,94 @@
+<div class="row">
+   <div class="col-md-6">
+      <div class="col-md-12 tech-panel" [@flyIn]="panelState1">
+         <md-card class="example-card">
+            <md-card-header>
+               <md-card-title>
+                  <div class="circle primary"></div>
+                  <span class="title">ASP.NET Core</span>
+               </md-card-title>
+            </md-card-header>
+            <md-card-content>
+               <p class="description">
+                  ASP.NET Core is a new open-source and cross-platform framework for building modern cloud based applications.
+               </p>
+               <p>
+                  Business layer developed with ASP.NET Core e.g. Web API, authentication, authorization ect.
+               </p>
+            </md-card-content>
+            <md-card-actions>
+               <button md-button>LIKE</button>
+               <button md-button (click)="openInNewTab('https://docs.microsoft.com/en-us/aspnet/core/')">MORE</button>
+            </md-card-actions>
+         </md-card>
+      </div>
+      <div class="col-md-12 tech-panel" [@flyIn]="panelState3">
+         <md-card class="example-card">
+            <md-card-header>
+               <md-card-title>
+                  <div class="circle accent"></div>
+                  <span class="title">Webpack 2</span>
+               </md-card-title>
+            </md-card-header>
+            <md-card-content>
+               <p class="description">
+                  Webpack is a module bundler. webpack takes modules with dependencies and generates static assets representing those modules.
+               </p>
+               <p>
+                  Webpack 2 used to build the Client app e.g. minifying, concatenating ect.
+               </p>
+            </md-card-content>
+            <md-card-actions>
+               <button md-button>LIKE</button>
+               <button md-button (click)="openInNewTab('https://webpack.js.org/')">MORE</button>
+            </md-card-actions>
+         </md-card>
+      </div>
+   </div>
+   <div class="col-md-6">
+      <div class="col-md-12 tech-panel" [@flyIn]="panelState2">
+         <md-card class="example-card">
+            <md-card-header>
+               <md-card-title>
+                  <div class="circle light-blue"></div>
+                  <span class="title">Angular 2</span>
+               </md-card-title>
+            </md-card-header>
+            <md-card-content>
+               <p class="description">
+                  Angular is not an MVC framework, but rather a component-based framework. In Angular an application is a tree of loosely coupled components.
+               </p>
+               <p>
+                  Angular 2 (^v4.0) has been used for the Client side of the website using Typescript.
+               </p>
+            </md-card-content>
+            <md-card-actions>
+               <button md-button>LIKE</button>
+               <button md-button (click)="openInNewTab('https://angular.io/')">MORE</button>
+            </md-card-actions>
+         </md-card>
+      </div>
+      <div class="col-md-12 tech-panel" [@flyIn]="panelState4">
+         <md-card class="example-card">
+            <md-card-header>
+               <md-card-title>
+                  <div class="circle primary-dark"></div>
+                  <span class="title">Material Design</span>
+               </md-card-title>
+            </md-card-header>
+            <md-card-content>
+               <p class="description">
+                  Material Design (codenamed Quantum Paper) is a design language and styling guide developed in 2014 by Google.
+               </p>
+               <p>
+                  Client side is styled using Angular Materials 2 and Material Design principles have been followed.
+               </p>
+            </md-card-content>
+            <md-card-actions>
+               <button md-button>LIKE</button>
+               <button md-button (click)="openInNewTab('https://material.io/guidelines/material-design/introduction.html')">MORE</button>
+            </md-card-actions>
+         </md-card>
+      </div>
+   </div>
+</div>
