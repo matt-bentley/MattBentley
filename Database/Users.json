@@ -15,5 +15,22 @@
     "Name": null,
     "NameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
     "RoleClaimType": "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
+  },
+  {
+    "Id": "6a6feed5-f63e-4dec-912f-000521cdbcad",
+    "UserName": "JB@TEST.COM",
+    "FirstName": "Joe",
+    "LastName": "Bloggs",
+    "Email": "jb@test.com",
+    "PasswordHash": "AQAAAAEAACcQAAAAEOznyeomFA1fR/JSwrtqzlsswNq73JQztXWj7rHljEYz2KdLCTl0/WM6VHZ9zIv7/w==",
+    "AuthenticationType": null,
+    "IsAuthenticated": false,
+    "Actor": null,
+    "BootstrapContext": null,
+    "Claims": [],
+    "Label": null,
+    "Name": null,
+    "NameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+    "RoleClaimType": "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
   }
 ]

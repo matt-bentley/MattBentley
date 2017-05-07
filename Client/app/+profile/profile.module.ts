@@ -4,7 +4,6 @@ import { ShareModule } from '../shared/share.module';
 import { SharedModule } from '../shared/shared.module';
 import { routing } from './profile.routes';
 import { ProfileComponent } from './profile.component';
-import { ProfileService } from './profile.service';
 import { ChangeNameComponent } from './changename/change-name.component';
 import { ChangePasswordComponent } from './changepassword/change-password.component';
 
@@ -14,6 +13,6 @@ import { ChangePasswordComponent } from './changepassword/change-password.compon
       ShareModule,
       SharedModule],
    declarations: [ProfileComponent, ChangeNameComponent, ChangePasswordComponent],
-   providers: [ProfileService]
+   providers: []
 })
 export class ProfileModule { }

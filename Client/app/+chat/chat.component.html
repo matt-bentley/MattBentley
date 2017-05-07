@@ -1,0 +1,64 @@
+<div class="row">
+   <div class="col-md-12 tech-panel" [@flyIn]="panelState1">
+      <div class="row">
+         <md-card class="example-card" style="padding:0">
+            <div class="col-md-3 light-blue header-box phone-hide" (click)="newChat()">
+               <div class="icon-container">
+                  <md-icon class="chat-icon">chat</md-icon>
+                  <span class="chat-icon-text"><br />New Chat</span>
+               </div>
+            </div>
+            <div class="col-md-9 header-content">
+               <md-card-header>
+                  <md-card-title>
+                     <span class="title">Chat</span>
+                  </md-card-title>
+               </md-card-header>
+               <md-card-content>
+                  <p>
+                     The Chat Room uses a .NET SignalR chat server for real time response messaging between subscribed clients.
+                     Click on a chat room or start a new chat. Please sign in to access the admin chat room. Click below to see the ChatServer project in GitHub.
+                  </p>
+               </md-card-content>
+               <md-card-actions style="margin-left: -20px !important;margin-right: -20px !important;">
+                  <button class="pc-hide" md-button style="margin-left: 25px;margin-top: -4px;" (click)="openInNewTab('https://github.com/matt-bentley/ChatServer')"><span class="text-blue">NEW ROOM</span></button>
+                  <button md-button style="margin-left: 25px;margin-top: -4px;" (click)="openInNewTab('https://github.com/matt-bentley/ChatServer')"><span class="text-blue">CHAT SERVER</span></button>
+               </md-card-actions>
+            </div>
+         </md-card>
+      </div>      
+   </div>
+   <div class="col-md-12 tech-panel" [@flyIn]="panelState2">
+      <div class="row">
+         <md-card class="example-card" style="padding:0;width: 100%;">
+            <div class="header-content" style="width: 100%;">
+               <md-card-header>
+                  <md-card-title>
+                     <span class="title">Chat Rooms</span>
+                     <md-icon class="refresh-icon" (click)="getChatRooms()">refresh</md-icon>
+                  </md-card-title>
+               </md-card-header>
+               <md-card-content>
+                  <p>
+                     <md-list class="chat-list">
+                        <h3 md-subheader class="text-primary">Public chat rooms</h3>
+                        <md-list-item class="chat-list-item" *ngIf="chatRooms.length === 0">There are currently not chat rooms open</md-list-item>
+                        <md-list-item class="chat-list-item" *ngFor="let room of chatRooms" (click)="openChatRoom(room)">{{room.Name}}</md-list-item>
+
+                        <md-divider></md-divider>
+                        <h3 md-subheader class="text-primary">Admin chat rooms</h3>
+                        <md-list-item class="chat-list-item" (click)="openAdminRoom()">Admin Room</md-list-item>
+                        <div *ngIf="adminError">
+                           <span class="text-danger">You must be signed in to access admin rooms</span>
+                        </div>
+                     </md-list>
+                  </p>
+               </md-card-content>
+               <md-card-actions>
+                  <button md-button style="margin-left: 25px;margin-top: -4px;" (click)="newChat()"><span class="text-blue">NEW CHAT</span></button>
+               </md-card-actions>
+            </div>            
+         </md-card>
+      </div>
+   </div>
+</div>

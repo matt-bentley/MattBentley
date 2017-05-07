@@ -1,0 +1,23 @@
+﻿.chat-container {
+   height: 250px;
+   width: 300px;
+   overflow-y: auto;
+}
+
+.chat-message {
+   color: #616161 !important;
+}
+
+.message-user {
+   font-size: 12px;
+   font-style: italic;
+   color: #ff4081;
+}
+
+.message-body {
+   margin-top: -2px;
+}
+
+:host /deep/ .mat-list-item-content {
+   height: auto!important;
+}

@@ -27,11 +27,17 @@ export class AccountService {
    ) { }
 
    private _loggedInSource = new Subject<boolean>();
+   private _loggedIn: boolean = false;
 
    public loggedIn$ = this._loggedInSource.asObservable();
 
    public updateLoggedIn(loggedIn: boolean): void {
+      this._loggedIn = loggedIn;
       this._loggedInSource.next(loggedIn);
+   }
+
+   public isLoggedIn(): boolean {
+      return this._loggedIn;
    }
 
    public register(data: RegisterModel): Observable<Response> {

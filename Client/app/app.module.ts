@@ -14,6 +14,7 @@ import { routing } from './app.routes';
 import { AppService } from './app.service';
 import { appReducer } from './app-store';
 import { AppComponent } from './app.component';
+import { ProfileService } from './+profile/profile.service';
 
 @NgModule({
    declarations: [AppComponent],
@@ -31,7 +32,8 @@ import { AppComponent } from './app.component';
       StoreDevtoolsModule.instrumentOnlyWithExtension()
    ],
    providers: [
-      AppService
+      AppService,
+      ProfileService
    ],
    bootstrap: [AppComponent]
 })

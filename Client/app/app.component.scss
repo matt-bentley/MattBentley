@@ -20,8 +20,40 @@
    background-color: $blue-colour !important;
 }
 
+:host /deep/ .text-primary {
+   color: $primary !important;
+}
+
+:host /deep/ .text-accent {
+   color: $accent !important;
+}
+
 :host /deep/ .text-blue {
    color: $blue-colour !important;
+}
+
+/* Scoll bar css - only works in Chrome */
+:host /deep/ ::-webkit-scrollbar {
+   width: 10px !important;
+}
+
+/* Track */
+:host /deep/ ::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
+   -webkit-border-radius: 10px !important;
+   border-radius: 10px !important;
+}
+
+/* Handle */
+:host /deep/ ::-webkit-scrollbar-thumb {
+   -webkit-border-radius: 10px !important;
+   border-radius: 10px !important;
+   background: #BBBCBC !important;
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5) !important;
+}
+
+:host /deep/ ::-webkit-scrollbar-thumb:window-inactive {
+   background: #CFD0D0 !important;
 }
 
 :host /deep/ .circle {
@@ -55,4 +87,14 @@
    }
 }
 
+@media (min-width: 768px) {
+   :host /deep/ .pc-hide {
+      display: none !important;
+   }
+}
 
+@media (max-width: 769px) {
+   :host /deep/ .phone-hide {
+      display: none!important;
+   }
+}

@@ -13,7 +13,7 @@ import { DialogElementsExampleDialog } from './home-dialog.component';
 })
 export class HomeComponent {
    constructor(public dialog: MdDialog) { }
-
+   
    openDialog() {
       this.dialog.open(DialogElementsExampleDialog);
    }  

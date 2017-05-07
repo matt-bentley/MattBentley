@@ -70,6 +70,9 @@ namespace AspNetCoreSpa
 
             services.AddSwaggerGen();
 
+            // DI for Configuration settings
+            services.AddSingleton<IConfiguration>(Configuration);
+
             // Add application services.
             //services.AddTransient<IEmailSender, AuthMessageSender>();
             //services.AddTransient<ISmsSender, AuthMessageSender>();

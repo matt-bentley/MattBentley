@@ -19,6 +19,9 @@ const routes: Routes = [
      path: 'technology', loadChildren: './+about/about.module#AboutModule'
   },
   {
+     path: 'chat', loadChildren: './+chat/chat.module#ChatModule'
+  },
+  {
     path: 'examples', loadChildren: './+examples/examples.module#ExamplesModule'
   }
 ];

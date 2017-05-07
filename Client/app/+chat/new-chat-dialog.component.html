@@ -1,0 +1,12 @@
+<form>
+   <h1 md-dialog-title>New Chat Room</h1>
+   <div md-dialog-content>
+      <md-input-container style="width:100%" class="example-full-width">
+         <input mdInput id="name" placeholder="Chat Room Name" name="name" [(ngModel)]="roomName" required>
+      </md-input-container>
+   </div>
+   <div md-dialog-actions>
+      <button type="submit" md-button (click)="addChatRoom()" color="accent">CREATE</button>
+      <button md-button md-dialog-close>CLOSE</button>
+   </div>
+</form>

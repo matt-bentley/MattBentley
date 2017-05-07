@@ -1,0 +1,32 @@
+<form>
+   <h1 md-dialog-title>{{chatRoom.Name}}</h1>
+   <div md-dialog-content>
+      <md-list style="overflow: hidden">
+         <div class="chat-container" #chatContainer>
+            <md-list-item class="chat-message" *ngIf="messages.length === 0">Welcome to a chat room</md-list-item>
+            <md-list-item class="chat-message" *ngFor="let message of messages">
+               <div>
+                  <div>
+                     <span class="text-accent message-user">
+                        {{message.Username}}:
+                     </span>
+                  </div>
+                  <div>
+                     <span class="message-body">
+                        {{message.Message}}
+                     </span>
+                  </div>
+               </div>
+            </md-list-item>
+            <md-divider></md-divider>
+         </div>
+      </md-list>
+      <md-input-container style="width:100%" class="example-full-width">
+         <input mdInput id="name" placeholder="Message" name="name" [(ngModel)]="message">
+      </md-input-container>
+   </div>
+   <div md-dialog-actions>
+      <button type="submit" md-button color="accent" (click)="sendMessage()">SEND</button>
+      <button md-button md-dialog-close>CLOSE</button>
+   </div>
+</form>
